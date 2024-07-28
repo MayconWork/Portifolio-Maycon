@@ -1,170 +1,1206 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maycon E. Oliveira - Desenvolvedor FullStack</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maycon E. Oliveira - Desenvolvedor web</title>
 
-    <link rel="stylesheet" href="./view/css/reset.css">
-    <link rel="stylesheet" href="./view/css/estilos.css">
-    <link rel="stylesheet" href="./view/css/responsivo.css">
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header class="cabecalho">
-        <a href="#">
-            <h1 class="logo">Ma</h1>
-        </a>
-        <nav class="menu">
-            <ul>
-                <li><a href="#projetos">Meus Projetos</a></li>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Maycon Espindola Oliveira" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Maycon Espindola Oliveira">Maycon E. Oliveira</h1>
+
+          <p class="title">Web developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:maycon.oliveira.work@gmail.com" class="contact-link">maycon.oliveira.work@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+5519971300662" class="contact-link">+55 (19) 97130-0662</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2003-10-07">07 de outubro de 2003</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Sumaré, São Paulo, Brasil</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Eu sou um desenvolvedor sediado em Campinas, São Paulo. Amo contribuir 
+            para o desenvolvimento do mundo, mesmo que seja só um pouco. Quero transformar o complexo em simples e o ineficaz em eficiente
+          </p>
+
+          <p>
+            Eu sou um desenvolvedor backend sediado em Campinas, São Paulo, apaixonado por criar soluções tecnológicas eficientes.
+            Meu trabalho é desenvolver as melhores soluções para problemas de funcionalidade em sistemas, garantindo que eles sejam robustos,
+            escaláveis e fáceis de manter. Tenho experiência em diversas linguagens de programação e sempre escolho a que melhor se adequa
+            às necessidades do projeto, seja pela performance, flexibilidade ou suporte à comunidade. Minha missão é transformar o complexo
+            em simples e o ineficaz em eficiente, sempre com o foco em entregar valor real aos usuários e aos negócios.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">O que faço</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/API_icon.png
+                " alt="API icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">API</h4>
+
+                <p class="service-item-text">
+                  Cração e consumo de API's
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  Foco em desenvolver web sites de alta qualidade.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/Server_icon.png" alt="server icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Server</h4>
+
+                <p class="service-item-text">
+                  Estudante em gerenciamento de dados e administração de servidores de banco de dados.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/arduino_icon.png" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Eletrônica Básica</h4>
+
+                <p class="service-item-text">
+                  Habilidades em Eletrica e Circuitos Integrados.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+        
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Senai Celso Charuri</h4>
+
+              <span>2020 — 2021</span>
+
+              <p class="timeline-text">
+                Técnico em Eletromecânica, onde adquiri conhecimentos em elétrica e sistemas integrados.
+                Além disso, participei de cursos complementares, como Office 365, Blockchain e Segurança no Trabalho,
+                ampliando meu entendimento e habilidades em áreas relevantes para o mercado atual.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">ETEC Bento Quirino</h4>
+
+              <span>2022 — 2023</span>
+
+              <p class="timeline-text">
+                Técnico em Desenvolvimento de Sistemas, onde aprendi os princípios da programação e adquiri conhecimento em diversas
+                linguagens, como PHP, Java e JavaScript. Além disso, possuo experiência com bancos de dados relacionais e não relacionais,
+                incluindo MySQL e MongoDB.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Faculdade UniceSumar</h4>
+
+              <span>2024 — Cursando</span>
+
+              <p class="timeline-text">
+                Atualmente cursando o Tecnólogo em Análise e Desenvolvimento de Sistemas, estou expandindo meu conhecimento técnico e
+                aprimorando minhas habilidades sociais e profissionais. A faculdade tem sido um espaço valioso para o desenvolvimento
+                de competências em áreas como programação, análise de sistemas e gestão de projetos, além de proporcionar um ambiente
+                de networking e crescimento pessoal.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Unicamp</h4>
+
+              <span>2022 — 2023</span>
+
+              <p class="timeline-text">
+                Estágio como Suporte Técnico, onde fui responsável pela manutenção de hardware e software, além de lidar com problemas
+                relacionados ao cabeamento de rede e outras questões técnicas. Minhas funções incluíam o diagnóstico inicial de equipamentos,
+                a instalação de sistemas operacionais e aplicativos, o atendimento a chamados de usuários para resolução de problemas técnicos
+                e o esclarecimento de dúvidas técnicas ou de funcionamento para os usuários, garantindo o funcionamento eficiente da
+                infraestrutura de TI.
+              </p>
+
+            </li>
+
+            <!--
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Nemo enims ipsam voluptatem</h4>
+
+              <span>xxxx — xxxx</span>
+
+              <p class="timeline-text">
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Nemo enims ipsam voluptatem</h4>
+
+              <span>xxxx — xxxx</span>
+
+              <p class="timeline-text">
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
+              </p>
+
+            </li>
+            -->
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">API</h5>
+                <data value="60">60%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">PHP</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Python</h5>
+                <data value="75">75%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">JavaScript</h5>
+                <data value="60">60%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Desenvolvimento Web</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Servers</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Circuitos Integrados</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Aplicativos</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-select-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Desenvolvimento Web</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Servers</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Circuitos Integrados</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Aplicativos</button>
+              </li>
+
             </ul>
-        </nav>
-    </header>
-    <section class="home">
-        <div class="informacoes">
-            <h1 style="font-family: 'Poppins';">Prazer!, sou Maycon E. Oliveira</h1>
-            <p> Sou um desenvolvedor fullstack focado em backend, com conhecimento sólido em PHP, JavaScript, HTML, CSS, Python e em bancos de dados relacionais como MySQL e não relacionais como MongoDB, possuo uma gama de habilidades valiosas para criar sistemas robustos e eficientes.</p>
-            <p>Sou um grande fã de games de gerenciamento e de animes.</p>
-            <p></p>
-            <p></p>
 
-            <ul class="redes-sociais">
-                <li>
-                    <a href="https://www.linkedin.com/in/maycon-espindola-oliveira-5871611ab" title="Ir Para o linkedin" target="_blank">
-                        <i class="fab fa-linkedin-in">
-                        </i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://wa.me/5519971300662" title="Enviar mensagem Pelo Whatsapp" target="_blank">
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/MayconWork" title="Ir Para o GitHub" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/nomedousuario" title="Ir Para o instagram" target="_blank">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
+          </div>
 
-        <div class="container-foto">
-            <div class="foto sombra-interna">
-                <img src="./view/images/Foto_self.jpeg" alt="Foto do Portfolio Maycon" width="100">
-            </div>
-        </div>
-    </section>
-    <section class="projetos" id="projetos">
-        <h2 class="titulo">Meus Projetos</h2>
-        <div class="container-projetos">
-            <div class="projeto ativo">
-                <a href="https://github.com/MayconEspindola/Plg_Log_remaster.git" target="_blank">
-                    <img src="./view/images/plg_log.png" alt="Projeto Plg_Log_remaster">
-                    <h3>PLG log</h3>
-                    <div class="informacoes-projeto">
-                        <p>Projeto feito Usando HTMl, CSS, JavaScript e PHP com MongoDB e docker</p>
-                        <p>Ver no GitHub
-                        </p>
-                    </div>
-                </a>
-            </div>
-            <div class="projeto ativo">
-                <a href="https://github.com/MayconEspindola/library_mongo.git" target="_blank">
-                    <img src="https://via.placeholder.com/515x700.png/a59090/000000?Text=515x700" alt="Projeto Library Mongo">
-                    <h3>Library Mongo </h3>
-                    <div class="informacoes-projeto">
-                        <p>Projeto feito Usando HTMl, CSS, JavaScript, MongoDB e docker</p>
-                        <p>Ver no GitHub
-                        </p>
-                    </div>
-                </a>
-            </div>
+          <ul class="project-list">
 
-            <div class="projeto ativo">
-                <a href="" target="_blank">
-                    <img src="https://via.placeholder.com/515x700.png/a59090/000000?Text=515x700" alt="Projeto Landing Page">
-                    <h3>projeto 3</h3>
-                    <div class="informacoes-projeto">
-                        <p>Projeto feito Usando HTMl, CSS e JavaScript</p>
-                        <p>Ver no GitHub Pages
-                        </p>
-                    </div>
-                </a>
-            </div>
-            <div class="projeto ativo">
-                <a href="" target="_blank">
-                    <img src="https://via.placeholder.com/515x700.png/a59090/000000?Text=515x700" alt="Projeto Landing Page">
-                    <h3>projeto 4</h3>
-                    <div class="informacoes-projeto">
-                        <p>Projeto feito Usando HTMl, CSS e JavaScript</p>
-                        <p>Ver no GitHub Pages
-                        </p>
-                    </div>
-                </a>
-            </div>
-            <div class="projeto">
-                <a href="" target="_blank">
-                    <img src="https://via.placeholder.com/515x700.png/a59090/000000?Text=515x700" alt="Projeto Landing Page">
-                    <h3>projeto 5</h3>
-                    <div class="informacoes-projeto">
-                        <p>Projeto feito Usando HTMl, CSS e JavaScript</p>
-                        <p>Ver no GitHub Pages
-                        </p>
-                    </div>
-                </a>
-            </div>
-            <div class="projeto">
-                <a href="" target="_blank">
-                    <img src="https://via.placeholder.com/515x700.png/a59090/000000?Text=515x700" alt="Projeto Landing Page">
-                    <h3>projeto 6</h3>
-                    <div class="informacoes-projeto">
-                        <p>Projeto feito Usando HTMl, CSS e JavaScript</p>
-                        <p>Ver no GitHub Pages
-                        </p>
-                    </div>
-                </a>
-            </div>
-            <div class="projeto">
-                <a href="" target="_blank">
-                    <img src="https://via.placeholder.com/515x700.png/a59090/000000?Text=515x700" alt="Projeto Landing Page">
-                    <h3>projeto 7</h3>
-                    <div class="informacoes-projeto">
-                        <p>Projeto feito Usando HTMl, CSS e JavaScript</p>
-                        <p>Ver no GitHub Pages
-                        </p>
-                    </div>
-                </a>
-            </div>
-            <div class="projeto">
-                <a href="" target="_blank">
-                    <img src="https://via.placeholder.com/515x700.png/a59090/000000?Text=515x700" alt="Projeto Landing Page">
-                    <h3>projeto 8</h3>
-                    <div class="informacoes-projeto">
-                        <p>Projeto feito Usando HTMl, CSS e JavaScript</p>
-                        <p>Ver no GitHub Pages
-                        </p>
-                    </div>
-                </a>
-            </div>
-        </div>
+            <li class="project-item  active" data-filter-item data-category="desenvolvimento web">
+              <a href="https://github.com/MayconEspindola/Plg_Log_remaster.git" target="_blank">
 
-        <button class="btn-mostrar-projetos">Mostrar Mais</button>
-    </section>
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
 
-    <script src="./controller/index.js"></script>
+                  <img src="./assets/images/plg_log.png" alt="logistica" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">PLG Log 2.0</h3>
+
+                <p class="project-category">Desenvolvimento Web</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="desenvolvimento web">
+              <a href="https://github.com/MayconEspindola/Plg_Log.git" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/plgLog.png" alt="Plg Log" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Plg Log - MySQL</h3>
+
+                <p class="project-category">Desenvolvimento Web</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="aplicativos">
+              <a href="https://github.com/MayconWork/passwordGenerator" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/passworGenerator.png" alt="Gerador de Senhas" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Gerador de Senhas</h3>
+
+                <p class="project-category">Aplicativos</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="desenvolvimento web">
+              <a href="https://github.com/MayconEspindola/library_mongo" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Biblioteca.png" alt="Biblioteca com MongoDb" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Biblioteca com MongoDb (work in progress)</h3>
+
+                <p class="project-category">desenvolvimento web</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="aplicativos">
+              <a href="https://github.com/MayconWork/testePraticoMaycon" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/projetoJava.png" alt="Tratamento de dados com java" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Tratamento de dados com java</h3>
+
+                <p class="project-category">Aplicativos</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="aplicativos">
+              <a href="https://github.com/MayconWork/pedra-papel-tesoura-python" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Jokenpo.png" alt="Jokenpo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Pedra Papel Tesoura</h3>
+
+                <p class="project-category">Aplicativos</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="circuitos integrados">
+              <a href="https://github.com/MayconWork/arduinoLCD" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/arduinoLCD.png" alt="LCD" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">LCD</h3>
+
+                <p class="project-category">Circuitos Integrados</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="circuitos integrados">
+              <a href="https://github.com/MayconWork/arduinoPotenciometro" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/arduinoPotenciometro.png" alt="Potenciometro" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Potenciometro</h3>
+
+                <p class="project-category">Circuitos Integrados</p>
+
+              </a>
+            </li>
+
+            <!--
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Arrival</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+          -->
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+      <!--
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+
+                  <p class="blog-text">
+                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+
+                  <p class="blog-text">
+                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+                  <p class="blog-text">
+                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+
+                  <p class="blog-text">
+                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+
+                  <p class="blog-text">
+                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+                  <p class="blog-text">
+                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+      -->
+      </article>
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+        
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117662.26574335732!2d-47.343599804003375!3d-22.8414945057632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8bcfd64c3182d%3A0x8e575af90f766b31!2zU3VtYXLDqSwgU1A!5e0!3m2!1spt-BR!2sbr!4v1722199777152!5m2!1spt-BR!2sbr"
+              width="400" 
+              height="300" 
+              style="border:0;" 
+              allowfullscreen 
+              loading="lazy">
+            </iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+          <h3 class="h3 form-title">Contact Form</h3>
+          <form action="./controler/sendMail.php" method="POST" class="form" data-form>
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+          </form>
+        </section>
+        
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
+
 </html>
